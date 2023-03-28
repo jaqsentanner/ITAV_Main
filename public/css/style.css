@@ -1,0 +1,33 @@
+.card {
+    min-height: 240px;
+}
+
+.nav-link {
+    color: black;
+}
+
+body {
+    background-color: rgb(176, 224, 175);
+}
+
+.btn-color {
+    color: black;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: black;
+    transform: scale(1.15);
+}
+
+.icon-marg {
+    margin-left: 12px;
+}
+
+.icon-marg:hover {
+    transform:scale(1.10)
+}
+

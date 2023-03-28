@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>It Takes a Village</title>
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid bg-info">
+        <div class="container">
+            <section class="row ml-3 d-flex justify-content-end">
+                <i title="Make a New Request" class="fa-solid fa-plus icon-marg"></i>
+                <i title="Profile" class="fa-solid fa-user icon-marg"></i>
+                <i title="More" class="fa-solid fa-bars icon-marg"></i>
+            </section>
+        </div>
+    </header>
+    <ul class="nav justify-content-center">
+      {{#if logged_in}}
+          <li>
+            <button class="btn" id="logout">Logout</button>
+          </li>
+            
+      {{else}}
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+      {{/if}}
+        <li class="nav-item">
+            <a class="nav-link" href="/">Fulfill Requests</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/requests/makeReq">Make a Request</a>
+        </li>
+    </ul>
+    
+    {{{body}}}
+
+    
+
+    </body>
+    <br>
+<footer class="bg-info">
+    <hr />
+    <div class="container">
+      <section class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4">
+          <address>
+            <h3>Developed By</h3>
+            <h5>jaqsentanner</h5>
+            <div>
+              <h5>
+                <a href="https://github.com/jaqsentanner"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/jaqsen-meyer-79b220237/"><i class="fa-brands fa-linkedin"></i></a>
+                <a><i class="fa-solid fa-bell"></i></a>
+              </h5>
+              
+            </div>
+            
+            
+          </address>
+        </div>
+        
+      </section>
+    </div>
+  </footer>
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>
