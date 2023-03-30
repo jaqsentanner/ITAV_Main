@@ -23,6 +23,10 @@ a:hover {
     transform: scale(1.15);
 }
 
+.header-marg {
+    margin-bottom: 25px;
+}
+
 .icon-marg {
     margin-left: 12px;
 }
@@ -31,3 +35,15 @@ a:hover {
     transform:scale(1.10)
 }
 
+.footer-h {
+    height: 142px;
+}
+
+.footer-marg {
+    margin-top: 15px;
+}
+
+.main-marg {
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
